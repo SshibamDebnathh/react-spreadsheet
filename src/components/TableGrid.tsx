@@ -128,7 +128,7 @@ const columns: ColumnDef<RowData>[] = [
     header: "",
     // id: "filler",
     accessorKey: "filler",
-    cell: () => <span className="block min-w-[48px] sm:min-w-[96px bg-white" />,
+    cell: () => <span className="block min-w-[48px] sm:min-w-[96px] bg-white" />,
   },
 ];
 
