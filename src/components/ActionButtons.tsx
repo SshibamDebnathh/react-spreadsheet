@@ -73,7 +73,7 @@ export const ActionButtons: FC = () => {
         {actions.map((action) => (
           <div
             key={action.name}
-            onClick={() => console.log(`${action} clicked`)}
+            onClick={() => console.log(`${action.name} clicked`)}
             className="flex gap-3 hover:underline transition items-center"
           >
             <span>{action.meta.icon}</span>
@@ -86,7 +86,7 @@ export const ActionButtons: FC = () => {
         {buttons.map((btn) => (
           <div
             key={btn.name}
-            onClick={() => console.log(`${btn} clicked`)}
+            onClick={() => console.log(`${btn.name} clicked`)}
             className={`flex items-center gap-2 px-3 py-[6px] rounded-md transition ${btn.name === "New Action"
               ? "bg-green-800 text-white px-7"
               : "border border-gray text-gray-500 hover:bg-green-800 hover:text-white px-4"
