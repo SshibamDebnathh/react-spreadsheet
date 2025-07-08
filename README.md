@@ -36,7 +36,7 @@ Supports inline editing, responsive design, action buttons, and a modern UI insp
 ## 📸 Screenshot
 
 
-> ![Screenshot (1420)](https://github.com/user-attachments/assets/8f21345f-a312-475c-952b-d84ce39bd775)
+> ![Screenshot (1420)](./src/assets/Screenshot%20(1420).png)
 ---
 
 
