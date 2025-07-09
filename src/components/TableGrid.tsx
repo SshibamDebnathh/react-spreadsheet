@@ -201,7 +201,7 @@ export const TableGrid: FC = () => {
           {table.getHeaderGroups().map((headerGroup) => (
             <tr
               key={headerGroup.id}
-              className="h-10 bg-gray-100 sticky z-10"
+              className="h-8 bg-gray-100 sticky z-10"
             >
               {headerGroup.headers.map((header, index) => {
 
@@ -209,7 +209,7 @@ export const TableGrid: FC = () => {
                   <th
                     key={header.id}
                     colSpan={header.colSpan}
-                    className={`px-3 py-2 text-left font-semibold text-gray-500 font-sans border-x border-x-gray whitespace-nowrap ${header.id==="filler"?"bg-white":null} ${header.id==="priority"?"bg-[#EAE3FC]":null} ${header.id==="dueDate"?"bg-[#EAE3FC]":null} ${header.id==="assigned"?"bg-[#E8F0E9]":null} ${header.id==="value"?"bg-[#FFE9E0]":null}`}
+                    className={`px-3 py-1 text-left font-semibold text-gray-500 font-sans border-x border-x-gray whitespace-nowrap ${header.id==="filler"?"bg-white":null} ${header.id==="priority"?"bg-[#EAE3FC]":null} ${header.id==="dueDate"?"bg-[#EAE3FC]":null} ${header.id==="assigned"?"bg-[#E8F0E9]":null} ${header.id==="value"?"bg-[#FFE9E0]":null}`}
                     onClick={(event)=>console.log(event.target)}
                   >
                     <div 
