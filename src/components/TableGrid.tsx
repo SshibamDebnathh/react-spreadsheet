@@ -165,7 +165,7 @@ export const TableGrid: FC = () => {
 
             </th>
             <th className="bg-white"></th>
-            <th className="px-2 text-left font-semibold text-gray-500 bg-green-300" style={{ backgroundColor: "#D2E0D4" }}>
+            <th className="px-2 py-2 text-left font-semibold text-gray-500 bg-green-300" style={{ backgroundColor: "#D2E0D4" }}>
               <div className="flex gap-2 items-center justify-center px-2">
                 <PiArrowsSplitThin />
                 <span>ABC
@@ -174,7 +174,7 @@ export const TableGrid: FC = () => {
               </div>
 
             </th>
-            <th colSpan={2} className="px-2 text-left font-semibold text-gray-500 bg-purple-300" style={{ backgroundColor: "#DCCFFC" }}>
+            <th colSpan={2} className="px-2 py-2 text-left font-semibold text-gray-500 bg-purple-300" style={{ backgroundColor: "#DCCFFC" }}>
               <div className="flex gap-2 items-center justify-between px-6 text-nowrap">
                 <PiArrowsSplitThin className="text-white" />
                 <span>Answer a Question</span>
@@ -183,7 +183,7 @@ export const TableGrid: FC = () => {
               </div>
 
             </th>
-            <th className="px-2 text-left font-semibold text-gray-500" style={{ backgroundColor: "#FAC2AF" }}>
+            <th className="px-2 py-2 text-left font-semibold text-gray-500" style={{ backgroundColor: "#FAC2AF" }}>
               <div className="flex gap-2 items-center justify-center px-2">
                 <PiArrowsSplitThin className="text-white" />
                 <span>Extract</span>
@@ -209,7 +209,7 @@ export const TableGrid: FC = () => {
                   <th
                     key={header.id}
                     colSpan={header.colSpan}
-                    className={`px-3 py-2 text-left font-semibold text-gray-500 font-sans border-x border-x-gray whitespace-nowrap ${header.id==="filler"?"bg-white":null}`}
+                    className={`px-3 py-2 text-left font-semibold text-gray-500 font-sans border-x border-x-gray whitespace-nowrap ${header.id==="filler"?"bg-white":null} ${header.id==="priority"?"bg-[#EAE3FC]":null} ${header.id==="dueDate"?"bg-[#EAE3FC]":null} ${header.id==="assigned"?"bg-[#E8F0E9]":null} ${header.id==="value"?"bg-[#FFE9E0]":null}`}
                     onClick={(event)=>console.log(event.target)}
                   >
                     <div 
